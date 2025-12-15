@@ -1,0 +1,57 @@
+/* src/index.css - ONLY these lines */
+@import 'tailwindcss';
+
+body {
+  font-feature-settings: 'ss01', 'ss02', 'cv01', 'cv02';
+  font-size: 90%;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111827; /* gray-900 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #374151; /* gray-700 */
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4b5563; /* gray-600 */
+}
+
+::selection {
+  background: rgba(59, 130, 246, 0.3); /* blue-500/30 */
+}
+
+* {
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+/* .nav-trans a:hover {
+  transition: 1s;
+  background-color: red;
+} */
+
+/* .nav-trans a div:first-child {
+  display: none;
+} */
+
+.move-up {
+  animation: m-up 0.5s ease;
+}
+
+@keyframes m-up {
+  0% {
+    opacity: 0.5;
+    transform: translateY(1%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
